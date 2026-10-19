@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pages/style/register.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <section class="registration-section" id="register">
+      <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <p>Fill in your details to register</p>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  autocomplete="given-name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="middlename">Middle Name</label>
+                <input
+                  type="text"
+                  id="middlename"
+                  name="middlename"
+                  autocomplete="additional-name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  autocomplete="family-name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  autocomplete="username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  autocomplete="new-password"
+                  minlength="8"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="telephone">Telephone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="1"
+                  max="150"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="profile">Profile Image</label>
+                <input
+                  type="file"
+                  id="profile"
+                  name="profile"
+                  accept="Image/*"
+                  required
+                />
+                <div class="form-group">
+                  <span class="field-label">Gender</span>
+                  <div class="radio-group">
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        required
+                      />Male</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        required
+                      />Female</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="other"
+                        required
+                      />Other</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="gender"
+                        value="prefer-not-say"
+                        required
+                      />Prefer not say</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="bio">Shorter Biography</label>
+                  <textarea
+                    id="bio"
+                    name="bio"
+                    rows="4"
+                    placeholder="Tell us a little about yourself..."
+                  ></textarea>
+                </div>
+                <fieldset>
+                  <legend>Course Information</legend>
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="course">Choose Your Course</label>
+                      <select name="course" id="course" required>
+                        <option value="">Select a course</option>
+                        <option value="frontend">Frontend Development</option>
+                        <option value="fullstack">
+                          Full Stack Development
+                        </option>
+                        <option value="uiux">UI/UX Design</option>
+                        <option value="data">Data Analyst</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="duration">Course Duration</label>
+                      <select name="duration" id="duration" required>
+                        <option value="">Select Duration</option>
+                        <option value="3-month">3 months</option>
+                        <option value="6-month">6 months</option>
+                        <option value="9-month">9 months</option>
+                        <option value="12-month">12 months</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="career">Tech Career of Interest</label>
+                      <select name="career" id="career">
+                        <option value="">Choose a career</option>
+                        <option value="frontend">Frontend Development</option>
+                        <option value="fullstack">
+                          Full Stack Development
+                        </option>
+                        <option value="uiux">UI/UX Design</option>
+                        <option value="data">Data Analyst</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit" class="submit-btn">Submit Registration</button>
+          <p class="form-note">Fields marked with * required</p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
